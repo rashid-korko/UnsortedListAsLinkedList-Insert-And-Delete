@@ -12,12 +12,13 @@
         android:layout_height="107dp"
         android:layout_marginTop="36dp"
         android:gravity="center"
-        android:text="Unsorted List As Linked List"
-        android:textSize="32dp"
+        android:text="@string/unsorted_list_as_linked_list"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView4"
@@ -25,18 +26,19 @@
         android:layout_height="76dp"
         android:layout_marginTop="24dp"
         android:gravity="center"
-        android:text="Insert & Delete App"
-        android:textSize="22dp"
+        android:text="@string/insert_and_delete_app"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="157dp"
         android:layout_height="51dp"
         android:layout_marginBottom="24dp"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

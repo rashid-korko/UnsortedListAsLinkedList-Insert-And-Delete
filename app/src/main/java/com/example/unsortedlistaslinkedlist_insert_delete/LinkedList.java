@@ -35,7 +35,7 @@ public class LinkedList {
         }
         Node nextNode = curr.next;
         while (curr.next != null) {
-            if (nextNode.next != null) {
+            if (nextNode.next == null) {
                 curr.next = null;
             }
             curr = nextNode;

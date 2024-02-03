@@ -5,4 +5,9 @@
     <string name="unsorted_list_as_linked_list">Unsorted List As Linked List</string>
     <string name="title_activity_2">Activity2</string>
     <string name="please_click_on_the_operation_you_want_to_perform">Please click on the operation you want to perform:</string>
+    <string name="show_the_list">Show the list</string>
+    <string name="delete_last">Delete last</string>
+    <string name="add_to_end">Add to end</string>
+    <string name="delete_start">Delete start</string>
+    <string name="add_to_start">Add to start</string>
 </resources>

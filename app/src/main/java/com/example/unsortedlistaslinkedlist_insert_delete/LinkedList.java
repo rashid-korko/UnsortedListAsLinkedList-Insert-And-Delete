@@ -21,8 +21,8 @@ public class LinkedList {
         }
     }
 
-    void addToStart(int data){
-        Node n = new Node(data);
+    void addToStart(String data){
+        Node n = new Node(Integer.parseInt(data));
         n.next = head;
         head = n;
     }

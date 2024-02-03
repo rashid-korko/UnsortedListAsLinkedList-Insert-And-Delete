@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/button10"
         android:layout_width="275dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="24dp"
         android:text="Show the list"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,11 +19,56 @@
     <Button
         android:id="@+id/button11"
         android:layout_width="275dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="24dp"
         android:text="Delete last"
         app:layout_constraintBottom_toTopOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:text="Add to end"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:text="Delete start"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:text="Add to start"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="329dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/please_click_on_the_operation_you_want_to_perform"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

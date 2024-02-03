@@ -12,14 +12,22 @@ public class Activity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_3);
-        System.out.println("Current List: ");
+        String Final = null;
         current = list.head;
+        int i = 0;
         while (current != null) {
             int hi = current.data;
             String stringMessage = Integer.toString(hi);
-            ((TextView)findViewById(R.id.textView2)).setText(stringMessage);
+            if (i == 0){
+                Final = stringMessage + "-";
+            }
+            else {
+                Final = Final + stringMessage + "-";
+            }
+            i++;
             current = current.next;
         }
+        ((TextView)findViewById(R.id.textView5)).setText(Final);
         //displayList(list.head);
 
     }

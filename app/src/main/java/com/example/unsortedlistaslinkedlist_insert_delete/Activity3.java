@@ -28,15 +28,5 @@ public class Activity3 extends AppCompatActivity {
             current = current.next;
         }
         ((TextView)findViewById(R.id.textView5)).setText(Final);
-        //displayList(list.head);
-
     }
-
-
-    /*public static void displayList(Node head) {
-        Node current = head;
-        while (current != null) {
-            current = current.next;
-        }
-    }*/
 }

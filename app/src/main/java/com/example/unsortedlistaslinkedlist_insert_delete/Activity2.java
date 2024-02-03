@@ -15,7 +15,6 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
-        //LinkedList list = new LinkedList(null);
         list.addToStart("50");
         list.addToStart("85");
         list.addToStart("65");
@@ -27,7 +26,6 @@ public class Activity2 extends AppCompatActivity {
         Intent i2 = new Intent(this, Activity3.class);
         String message = ((EditText)findViewById(R.id.editTextNumber)).getText().toString();
         list.addToStart(message);
-        //i2.putExtra("cool", (Serializable) list);
         startActivity(i2);
     }
 
@@ -35,23 +33,27 @@ public class Activity2 extends AppCompatActivity {
 
         Intent i2 = new Intent(this, Activity3.class);
         String message = ((EditText)findViewById(R.id.editTextNumber)).getText().toString();
-        i2.putExtra("cool", message);
+        list.addToEnd(message);
         startActivity(i2);
     }
 
     public void DeleteStart(View v){
 
         Intent i2 = new Intent(this, Activity3.class);
-        String message = ((EditText)findViewById(R.id.editTextNumber)).getText().toString();
-        i2.putExtra("cool", message);
+        list.deleteStart();
         startActivity(i2);
     }
 
     public void DeleteLast(View v){
 
         Intent i2 = new Intent(this, Activity3.class);
-        String message = ((EditText)findViewById(R.id.editTextNumber)).getText().toString();
-        i2.putExtra("cool", message);
+        list.deleteLast();
+        startActivity(i2);
+    }
+
+    public void ShowTheList(View v){
+
+        Intent i2 = new Intent(this, Activity3.class);
         startActivity(i2);
     }
 }

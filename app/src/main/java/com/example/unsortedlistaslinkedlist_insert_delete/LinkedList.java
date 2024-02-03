@@ -7,8 +7,8 @@ public class LinkedList {
         this.head = head;
     }
 
-    void addToEnd(int data){
-        Node n = new Node(data);
+    void addToEnd(String data){
+        Node n = new Node(Integer.parseInt(data));
         if (head == null) {
             head = n;
         }

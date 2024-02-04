@@ -1,5 +1,6 @@
 package com.example.unsortedlistaslinkedlist_insert_delete;
 
+// this class for linked list for project it has more than function (addToEnd - deleteStart - ......)
 public class LinkedList {
     Node head;
 

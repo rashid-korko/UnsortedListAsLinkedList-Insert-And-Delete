@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
+//here the 3th activity will begin and in this activity we print list for user
 public class Activity3 extends AppCompatActivity {
     public Node current;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +20,10 @@ public class Activity3 extends AppCompatActivity {
             int hi = current.data;
             String stringMessage = Integer.toString(hi);
             if (i == 0){
-                Final = stringMessage + "-";
+                Final = stringMessage;
             }
             else {
-                Final = Final + stringMessage + "-";
+                Final = Final + "-" + stringMessage;
             }
             i++;
             current = current.next;
